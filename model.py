@@ -106,14 +106,14 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 with tf.Session() as sess:
   sess.run(tf.global_variables_initializer())
-  for j in range(10):
+  for j in range(4):
   	np.random.shuffle(data)
-	train_images=data[0:1920,0:27648]
-	train_labels=np.zeros((1920,2))
-	train_labels[np.arange(1920), np.reshape(data[0:1920,27648:27649].astype(int),[1920])]=1
-	test_images=data[1920:2400,0:27648]
-	test_labels=np.zeros((480,2))
-	test_labels[np.arange(480), np.reshape(data[1920:2400,27648:27649].astype(int),[480])]=1
+  	train_images=data[0:1920,0:27648]
+  	train_labels=np.zeros((1920,2))
+  	train_labels[np.arange(1920), np.reshape(data[0:1920,27648:27649].astype(int),[1920])]=1
+  	test_images=data[1920:2400,0:27648]
+  	test_labels=np.zeros((480,2))
+  	test_labels[np.arange(480), np.reshape(data[1920:2400,27648:27649].astype(int),[480])]=1
   	print 'Epoch '+str(j)
   	for i in range(12):
   		if i % 3 == 0:

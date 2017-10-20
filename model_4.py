@@ -1,18 +1,26 @@
+import numpy as np 
+import matplotlib as mp
+%matplotlib inline
+import matplotlib.pyplot as plt
 import tensorflow as tf
+import tensorflow.contrib.slim as slim
+from tensorflow.examples.tutorials.mnist import input_data
+import math
 from os import listdir
-import numpy as np
 from skimage import novice
+from scipy.misc import imshow
+from scipy.ndimage import rotate
 
 d_images = list()
 u_images = list()
 p_images = list()
-for image in listdir('dataset_2/d'):
-    d_images.append('dataset_2/d/'+image)
-for image in listdir('dataset_2/u'):
-    u_images.append('dataset_2/u/'+image)
-for image in listdir('dataset_2/p'):
-    p_images.append('dataset_2/p/'+image)
-data = np.ndarray([990,96*96*3])
+for image in listdir('full_dataset/d'):
+    d_images.append('full_dataset/d/'+image)
+for image in listdir('full_dataset/u'):
+    u_images.append('full_dataset/u/'+image)
+for image in listdir('full_dataset/p'):
+    p_images.append('full_dataset/p/'+image)
+data = np.ndarray([1986,96*96*3])
 i = 0
 for image in d_images:
     raw = novice.open(image)
@@ -29,16 +37,22 @@ for image in p_images:
     raw.size = (96,96)
     data[i] = raw.rgb.reshape([96*96*3])
     i = i+1
-data = np.hstack([data, np.zeros([990,1])])
-for i in range(689,874):
+data = np.hstack([data, np.zeros([1986,1])])
+for i in range(1372,1774):
     data[i][27648]=1
-for i in range(874,990):
+for i in range(1774,1986):
     data[i][27648]=2
 
-sess = tf.InteractiveSession()
+np.random.shuffle(data)
+train_data = data[0:1500,0:27649]
+test_data = data[1500:1986,0:27649]
 
+tf.reset_default_graph()
+
+keep_prob = tf.placeholder("float")
 x = tf.placeholder(tf.float32, shape=[None, 27648])
 y = tf.placeholder(tf.float32, shape=[None, 3])
+
 def weight_variable(shape):
   initial = tf.truncated_normal(shape, stddev=0.1)
   return tf.Variable(initial)
@@ -105,21 +119,47 @@ correct_prediction = tf.equal(tf.argmax(y_conv, 1), tf.argmax(y, 1))
 
 accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
-with tf.Session() as sess:
-  sess.run(tf.global_variables_initializer())
-  for j in range(5):
-    np.random.shuffle(data)
-    train_images=data[0:790,0:27648]
-    train_labels=np.zeros((790,3))
-    train_labels[np.arange(790), np.reshape(data[0:790,27648:27649].astype(int),[790])]=1
-    test_images=data[790:990,0:27648]
-    test_labels=np.zeros((200,3))
-    test_labels[np.arange(200), np.reshape(data[790:990,27648:27649].astype(int),[200])]=1
-    print 'Epoch '+str(j)
-    for i in range(10):
-      if i % 1 == 0:
-        train_accuracy = accuracy.eval(feed_dict={x: train_images[(i*79):(i*79)+79,0:], y: train_labels[(i*79):(i*79)+79,0:], keep_prob: 1.0})
-        print('step %d, training accuracy %g' % (i, train_accuracy))
-      train_step.run(feed_dict={x: train_images[(i*79):(i*79)+79,0:], y: train_labels[(i*79):(i*79)+79,0:], keep_prob: 0.5})
+test_images=test_data[0:486,0:27648]
+test_labels=np.zeros((486,3))
+test_labels[np.arange(486), np.reshape(test_data[0:486,27648:27649].astype(int),[486])]=1
 
-  print('test accuracy %g' % accuracy.eval(feed_dict={x: test_images, y: test_labels, keep_prob: 1.0}))
+sess = tf.Session()
+init = tf.global_variables_initializer()
+sess.run(init)
+for j in range(2):
+    np.random.shuffle(train_data)
+    train_images=train_data[0:1500,0:27648]
+    train_labels=np.zeros((1500,3))
+    train_labels[np.arange(1500), np.reshape(train_data[0:1500,27648:27649].astype(int),[1500])]=1
+    print 'Epoch '+str(j)
+    for i in range(30):
+        sess.run(train_step, feed_dict={x: train_images[(i*50):(i*50)+50,0:], y: train_labels[(i*50):(i*50)+50,0:], keep_prob: 1.0})
+        if (i+1) % 5 == 0:
+            trainAccuracy = sess.run(accuracy, feed_dict={x: train_images[(i*50):(i*50)+50,0:], y: train_labels[(i*50):(i*50)+50,0:], keep_prob: 1.0})
+            print("step %d, training accuracy %g"%(i+1, trainAccuracy))
+
+testAccuracy = sess.run(accuracy, feed_dict={x: test_images, y: test_labels, keep_prob:1.0})
+print("test accuracy %g"%(testAccuracy))
+
+def getActivations(layer,stimuli):
+    units = sess.run(layer,feed_dict={x:np.reshape(stimuli,[1,27648],order='F'),keep_prob:1.0})
+    plotNNFilter(units)
+def plotNNFilter(units):
+    print(units.shape[3])
+    filters = units.shape[3]
+    plt.figure(1, figsize=(20,20))
+    n_columns = 6
+    n_rows = math.ceil(filters / n_columns) + 1
+    for i in range(filters):
+        plt.subplot(n_rows, n_columns, i+1)
+        plt.title('Filter ' + str(i))
+        plt.imshow(rotate(units[0,:,:,i],90))
+
+imageToUse = test_images[0]
+plt.imshow(rotate(np.reshape(imageToUse,[96,96,3]),90))
+
+getActivations(h_conv1,imageToUse)
+
+getActivations(h_conv2,imageToUse)
+
+getActivations(h_conv3,imageToUse)

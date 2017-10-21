@@ -1,0 +1,500 @@
+Epoch 0
+step 10, training accuracy 0.64
+step 20, training accuracy 0.82
+step 30, training accuracy 0.78
+0 epoch test accuracy 0.786008
+Epoch 1
+step 10, training accuracy 0.86
+step 20, training accuracy 0.98
+step 30, training accuracy 0.92
+1 epoch test accuracy 0.839506
+Epoch 2
+step 10, training accuracy 0.9
+step 20, training accuracy 0.88
+step 30, training accuracy 0.94
+2 epoch test accuracy 0.837449
+Epoch 3
+step 10, training accuracy 0.98
+step 20, training accuracy 0.94
+step 30, training accuracy 1
+3 epoch test accuracy 0.860082
+Epoch 4
+step 10, training accuracy 0.94
+step 20, training accuracy 0.92
+step 30, training accuracy 0.94
+4 epoch test accuracy 0.816872
+Epoch 5
+step 10, training accuracy 0.86
+step 20, training accuracy 0.96
+step 30, training accuracy 0.94
+5 epoch test accuracy 0.839506
+Epoch 6
+step 10, training accuracy 0.98
+step 20, training accuracy 0.96
+step 30, training accuracy 0.96
+6 epoch test accuracy 0.868313
+Epoch 7
+step 10, training accuracy 1
+step 20, training accuracy 0.96
+step 30, training accuracy 1
+7 epoch test accuracy 0.864198
+Epoch 8
+step 10, training accuracy 0.98
+step 20, training accuracy 1
+step 30, training accuracy 0.98
+8 epoch test accuracy 0.86214
+Epoch 9
+step 10, training accuracy 0.98
+step 20, training accuracy 1
+step 30, training accuracy 1
+9 epoch test accuracy 0.880658
+Epoch 10
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 0.98
+10 epoch test accuracy 0.878601
+Epoch 11
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 0.98
+11 epoch test accuracy 0.886831
+Epoch 12
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+12 epoch test accuracy 0.878601
+Epoch 13
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+13 epoch test accuracy 0.886831
+Epoch 14
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+14 epoch test accuracy 0.874486
+Epoch 15
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 0.98
+15 epoch test accuracy 0.866255
+Epoch 16
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 0.98
+16 epoch test accuracy 0.872428
+Epoch 17
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+17 epoch test accuracy 0.864198
+Epoch 18
+step 10, training accuracy 1
+step 20, training accuracy 0.96
+step 30, training accuracy 1
+18 epoch test accuracy 0.866255
+Epoch 19
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 0.96
+19 epoch test accuracy 0.87037
+Epoch 20
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 0.96
+20 epoch test accuracy 0.890947
+Epoch 21
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 0.98
+21 epoch test accuracy 0.878601
+Epoch 22
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+22 epoch test accuracy 0.87037
+Epoch 23
+step 10, training accuracy 1
+step 20, training accuracy 0.98
+step 30, training accuracy 1
+23 epoch test accuracy 0.893004
+Epoch 24
+step 10, training accuracy 0.98
+step 20, training accuracy 1
+step 30, training accuracy 1
+24 epoch test accuracy 0.884774
+Epoch 25
+step 10, training accuracy 0.96
+step 20, training accuracy 1
+step 30, training accuracy 1
+25 epoch test accuracy 0.888889
+Epoch 26
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+26 epoch test accuracy 0.899177
+Epoch 27
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+27 epoch test accuracy 0.90535
+Epoch 28
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+28 epoch test accuracy 0.886831
+Epoch 29
+step 10, training accuracy 0.98
+step 20, training accuracy 1
+step 30, training accuracy 1
+29 epoch test accuracy 0.897119
+Epoch 30
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+30 epoch test accuracy 0.901235
+Epoch 31
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+31 epoch test accuracy 0.90535
+Epoch 32
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+32 epoch test accuracy 0.890947
+Epoch 33
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+33 epoch test accuracy 0.895062
+Epoch 34
+step 10, training accuracy 0.96
+step 20, training accuracy 1
+step 30, training accuracy 1
+34 epoch test accuracy 0.899177
+Epoch 35
+step 10, training accuracy 0.94
+step 20, training accuracy 1
+step 30, training accuracy 1
+35 epoch test accuracy 0.90535
+Epoch 36
+step 10, training accuracy 1
+step 20, training accuracy 0.98
+step 30, training accuracy 0.94
+36 epoch test accuracy 0.864198
+Epoch 37
+step 10, training accuracy 0.98
+step 20, training accuracy 1
+step 30, training accuracy 1
+37 epoch test accuracy 0.897119
+Epoch 38
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+38 epoch test accuracy 0.882716
+Epoch 39
+step 10, training accuracy 0.98
+step 20, training accuracy 0.98
+step 30, training accuracy 1
+39 epoch test accuracy 0.866255
+Epoch 40
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 0.96
+40 epoch test accuracy 0.878601
+Epoch 41
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+41 epoch test accuracy 0.909465
+Epoch 42
+step 10, training accuracy 1
+step 20, training accuracy 0.98
+step 30, training accuracy 0.98
+42 epoch test accuracy 0.899177
+Epoch 43
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+43 epoch test accuracy 0.903292
+Epoch 44
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+44 epoch test accuracy 0.890947
+Epoch 45
+step 10, training accuracy 1
+step 20, training accuracy 0.98
+step 30, training accuracy 1
+45 epoch test accuracy 0.899177
+Epoch 46
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+46 epoch test accuracy 0.899177
+Epoch 47
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+47 epoch test accuracy 0.874486
+Epoch 48
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 0.98
+48 epoch test accuracy 0.888889
+Epoch 49
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+49 epoch test accuracy 0.888889
+Epoch 50
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+50 epoch test accuracy 0.903292
+Epoch 51
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+51 epoch test accuracy 0.893004
+Epoch 52
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 0.98
+52 epoch test accuracy 0.895062
+Epoch 53
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+53 epoch test accuracy 0.890947
+Epoch 54
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+54 epoch test accuracy 0.893004
+Epoch 55
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 0.98
+55 epoch test accuracy 0.903292
+Epoch 56
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+56 epoch test accuracy 0.893004
+Epoch 57
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+57 epoch test accuracy 0.90535
+Epoch 58
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+58 epoch test accuracy 0.90535
+Epoch 59
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+59 epoch test accuracy 0.90535
+Epoch 60
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+60 epoch test accuracy 0.90535
+Epoch 61
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+61 epoch test accuracy 0.90535
+Epoch 62
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+62 epoch test accuracy 0.90535
+Epoch 63
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+63 epoch test accuracy 0.90535
+Epoch 64
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+64 epoch test accuracy 0.90535
+Epoch 65
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+65 epoch test accuracy 0.90535
+Epoch 66
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+66 epoch test accuracy 0.90535
+Epoch 67
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+67 epoch test accuracy 0.90535
+Epoch 68
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+68 epoch test accuracy 0.90535
+Epoch 69
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+69 epoch test accuracy 0.90535
+Epoch 70
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+70 epoch test accuracy 0.90535
+Epoch 71
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+71 epoch test accuracy 0.90535
+Epoch 72
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+72 epoch test accuracy 0.90535
+Epoch 73
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+73 epoch test accuracy 0.90535
+Epoch 74
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+74 epoch test accuracy 0.90535
+Epoch 75
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+75 epoch test accuracy 0.90535
+Epoch 76
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+76 epoch test accuracy 0.90535
+Epoch 77
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+77 epoch test accuracy 0.90535
+Epoch 78
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+78 epoch test accuracy 0.90535
+Epoch 79
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+79 epoch test accuracy 0.90535
+Epoch 80
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+80 epoch test accuracy 0.90535
+Epoch 81
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+81 epoch test accuracy 0.90535
+Epoch 82
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+82 epoch test accuracy 0.90535
+Epoch 83
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+83 epoch test accuracy 0.90535
+Epoch 84
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+84 epoch test accuracy 0.90535
+Epoch 85
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+85 epoch test accuracy 0.90535
+Epoch 86
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+86 epoch test accuracy 0.90535
+Epoch 87
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+87 epoch test accuracy 0.90535
+Epoch 88
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+88 epoch test accuracy 0.90535
+Epoch 89
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+89 epoch test accuracy 0.90535
+Epoch 90
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+90 epoch test accuracy 0.90535
+Epoch 91
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+91 epoch test accuracy 0.90535
+Epoch 92
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+92 epoch test accuracy 0.90535
+Epoch 93
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+93 epoch test accuracy 0.90535
+Epoch 94
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+94 epoch test accuracy 0.90535
+Epoch 95
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+95 epoch test accuracy 0.90535
+Epoch 96
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+96 epoch test accuracy 0.90535
+Epoch 97
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+97 epoch test accuracy 0.90535
+Epoch 98
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+98 epoch test accuracy 0.90535
+Epoch 99
+step 10, training accuracy 1
+step 20, training accuracy 1
+step 30, training accuracy 1
+99 epoch test accuracy 0.90535
